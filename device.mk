@@ -195,3 +195,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
        debug.sf.disable_backpressure=1 \
        debug.sf.enable_gl_backpressure=1 \
        debug.hwui.renderer=opengl \
+
+# Strip debug
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
