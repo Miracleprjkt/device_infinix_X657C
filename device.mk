@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/infinix/X657C/X657C-vendor.mk)
 
+# Audio package for Go
+$(call inherit-product, frameworks/base/data/sounds/AudioPackageGo.mk)
+
 # Inherit common Android Go defaults.
 $(call inherit-product, build/make/target/product/go_defaults.mk)
 
@@ -32,7 +35,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
-# Dolby
+#Dolby
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.feature.dolby_enable=true \
     vendor.audio.dolby.ds2.enabled=true \
