@@ -25,6 +25,9 @@ $(call inherit-product, vendor/infinix/X657C/X657C-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+# Inherit customized Android Go defaults.
+$(call inherit-product, device/lenovo/a6010/go_defaults_custom.mk)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
@@ -51,10 +54,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
     android.hardware.configstore@1.1-service
-
-# SystemUI module for Android Go
-PRODUCT_PACKAGES += \
-    SystemUIGo
 
 # DT2W
 PRODUCT_PACKAGES += \
