@@ -28,6 +28,9 @@ $(call inherit-product, frameworks/base/data/sounds/AudioPackageGo.mk)
 # Inherit common Android Go defaults.
 $(call inherit-product, build/make/target/product/go_defaults.mk)
 
+# Inherit customized Android Go defaults.
+$(call inherit-product, device/infinix/X657C/go_defaults_custom.mk)
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
