@@ -169,3 +169,7 @@ $(call inherit-product, build/make/target/product/go_defaults_512.mk)
 # SystemUI module for Android Go
 PRODUCT_PACKAGES += \
     SystemUIGo
+
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+       debug.composition.type=c2d \
