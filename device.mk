@@ -29,7 +29,7 @@ $(call inherit-product, frameworks/base/data/sounds/AudioPackageGo.mk)
 $(call inherit-product, build/make/target/product/go_defaults.mk)
 
 # Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
