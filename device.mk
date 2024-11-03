@@ -165,3 +165,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Inherit common Android Go defaults.
 $(call inherit-product, build/make/target/product/go_defaults_512.mk)
+
+# SystemUI module for Android Go
+PRODUCT_PACKAGES += \
+    SystemUIGo
