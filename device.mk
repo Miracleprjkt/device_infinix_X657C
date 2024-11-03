@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/infinix/X657C/X657C-vendor.mk)
 
+# Inherit common Android Go defaults.
+$(call inherit-product, build/make/target/product/go_defaults.mk)
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
