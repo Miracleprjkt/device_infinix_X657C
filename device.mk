@@ -162,3 +162,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true \
     ro.vendor.qti.sys.fw.bservice_limit=5 \
     ro.vendor.qti.sys.fw.bservice_age=5000
+
+# Inherit common Android Go defaults.
+$(call inherit-product, build/make/target/product/go_defaults_512.mk)
