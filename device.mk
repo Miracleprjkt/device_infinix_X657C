@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0_system
 
+# FastCharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.usb
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
