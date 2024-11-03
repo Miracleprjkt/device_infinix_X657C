@@ -172,4 +172,11 @@ PRODUCT_PACKAGES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
+       ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
        debug.composition.type=c2d \
+       debug.sf.hw=0 \
+       debug.egl.hw=0 \
+       debug.enable.sglscale=1 \
+       debug.sf.disable_backpressure=1 \
+       debug.sf.enable_gl_backpressure=1 \
+       debug.hwui.renderer=opengl \
