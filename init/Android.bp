@@ -15,6 +15,7 @@
 //
 cc_library_static {
     name: "libinit_X657C",
+    shared_libs: ["libbase"],
     recovery_available: true,
     srcs: ["init_X657C.cpp"],
     include_dirs: [
