@@ -52,6 +52,10 @@ PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
     android.hardware.configstore@1.1-service
 
+# SystemUI module for Android Go
+PRODUCT_PACKAGES += \
+    SystemUIGo
+
 # DT2W
 PRODUCT_PACKAGES += \
     DT2W-Service-X657C
