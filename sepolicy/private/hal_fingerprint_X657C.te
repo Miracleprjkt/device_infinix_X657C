@@ -3,6 +3,7 @@ typeattribute hal_fingerprint_X657C data_between_core_and_vendor_violators;
 typeattribute hal_fingerprint_X657C vendor_executes_system_violators;
 hal_client_domain(hal_fingerprint_X657C, hal_fingerprint)
 hal_server_domain(hal_fingerprint_X657C, hal_fingerprint)
+allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
 type hal_fingerprint_X657C_exec, system_file_type, exec_type, file_type;
 init_daemon_domain(hal_fingerprint_X657C)
